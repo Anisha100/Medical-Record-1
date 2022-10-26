@@ -675,6 +675,8 @@ def decr(tok):
 def get_location(ip):
 	response = requests.get("https://ipgeolocation.abstractapi.com/v1/?api_key=62cddacb34cb4dbfb0fc5cba0e329039&ip_address="+ip)
 	json_data = json.loads(response.text)
+	print(json_data)
+	print(ip)
 	city=json_data['city']
 	country=json_data['country']
 	k="City: "+city+"\n"
