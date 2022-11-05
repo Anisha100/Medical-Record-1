@@ -5,6 +5,6 @@ import os
 def restart():
   mem=int(psutil.virtual_memory().free/1024)
   print("RAM Usage: ",mem)
-  if mem<6000000:
+  if mem<116224819:
     print("Apache restarted")
     os.system("sudo service apache2 restart")
