@@ -1,9 +1,9 @@
 import psutil
 import gc
 import os
-from sqloperations import *
+#from sqloperations import *
 def restart():
-  getUserCount()
+  #getUserCount()
   mem=int(psutil.virtual_memory().free/1024)
   print("Free RAM: ",mem)
   if mem<30000:
