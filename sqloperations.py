@@ -26,8 +26,8 @@ def addUser(username, email, name, fln):
 	except:
 		createUserTable()
 		try:
-			command = 'INSERT INTO [User] VALUES (?,?,?)'	
-			cursor.execute(command,username,email,name)
+			command = 'INSERT INTO [User] VALUES (?,?,?,?)'	
+			cursor.execute(command,username,email,name,fln)
 			cursor.commit()
 		except:
 			pass
